@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import './styles/main.css';
+
 import reportWebVitals from './reportWebVitals';
+
+import RouteMap from './configs/RouteMap';
+import AuthProvider from './contexts/AuthContext';
+import LoadingProvider from './contexts/LoadingContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LoadingProvider>
+      <AuthProvider>
+        <RouteMap />
+      </AuthProvider>
+    </LoadingProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

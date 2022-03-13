@@ -1,0 +1,15 @@
+.btn {
+  &-primary {
+    background-color: @button-primary-background-color;
+    border-color: @button-primary-border-color;
+    color: @button-primary-color;
+    padding: 0.25rem 1rem;
+    .rounded;
+
+    &:hover {
+      background-color: darken(@button-primary-background-color, 10%);
+      border-color: darken(@button-primary-border-color, 10%);
+      color: @button-primary-color;
+    }
+  }
+}

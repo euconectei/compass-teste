@@ -1,0 +1,8 @@
+{
+  "jest.autoRun": {
+    "watch": false,
+    "onStartup": ["all-tests"],
+    "onSave": "test-file"
+  },
+  "jest.showCoverageOnLoad": true
+}

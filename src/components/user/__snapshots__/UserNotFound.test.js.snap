@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing UserNotFound Component shold render the component 1`] = `
+<div
+  className="alert alert-info"
+>
+  O usuário 
+  teste
+   não foi encontrado.
+</div>
+`;

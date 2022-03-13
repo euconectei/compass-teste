@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing UserDisplay Component shold render the component 1`] = `
+<div
+  className="m-3"
+>
+  <div
+    className="card user-card"
+  >
+    <img
+      alt="Foto de euconectei"
+      className="card-img-top"
+      src="https://avatars.githubusercontent.com/u/1842710?v=4"
+    />
+    <div
+      className="card-body"
+    >
+      <h5
+        className="card-title"
+      >
+        euconectei
+      </h5>
+      <ul
+        className="list-group list-group-flush"
+      >
+        <li
+          className="list-group-item"
+        >
+          <span
+            className="font-weight-bold"
+          >
+            Nome:
+          </span>
+           
+          Rafael França
+        </li>
+        <li
+          className="list-group-item"
+        >
+          <span
+            className="font-weight-bold"
+          >
+            E-mail:
+          </span>
+           
+        </li>
+        <li
+          className="list-group-item"
+        >
+          <span
+            className="font-weight-bold"
+          >
+            Repositórios:
+          </span>
+           
+          40
+        </li>
+        <li
+          className="list-group-item"
+        >
+          <span
+            className="font-weight-bold"
+          >
+            Seguidores:
+          </span>
+           
+          35
+        </li>
+        <li
+          className="list-group-item"
+        >
+          <span
+            className="font-weight-bold"
+          >
+            Seguindo:
+          </span>
+           
+          7
+        </li>
+      </ul>
+      <hr
+        className="divider"
+      />
+      <div
+        className="d-flex justify-content-between"
+      >
+        <a
+          className="btn btn-primary"
+          href="/euconectei/repos"
+        >
+          Repos
+        </a>
+        <a
+          className="btn btn-primary"
+          href="/euconectei/starred"
+        >
+          Starred
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
