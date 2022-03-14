@@ -1,20 +1,20 @@
-import instance from './instance';
+import axios from 'axios';
 
 const AuthService = {
   getAccessToken: async (code: string) => {
     try {
-      const res = await instance.post(
-        '/login/oauth/access_token',
-        {},
-        {
-          params: {
-            client_id: process.env.REACT_APP_GITHUB_CLIENT_ID,
-            client_secret: process.env.REACT_APP_GITHUB_CLIENT_SECRET,
-            code,
-          },
-          baseURL: 'https://github.com',
-        }
-      );
+      const res = await axios({
+        url: `http://localhost:5000/token`,
+        method: 'post',
+        data: {
+          code: code,
+        },
+        headers: {
+          Accept: 'application/json',
+          // 'Content-Type': 'application/json',
+        },
+      });
+
       return res.data;
     } catch (error) {
       console.error({ error });
