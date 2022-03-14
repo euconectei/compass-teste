@@ -13,8 +13,8 @@ const RepoList = ({ repos }: RepoListType) => {
 
   return (
     <ul className='nav flex-column'>
-      {repos.map((repo, i) => (
-        <li key={`repo-${i}`} className='nav-item'>
+      {repos.map((repo) => (
+        <li key={repo.id} className='nav-item'>
           <a href={repo.html_url} className='nav-link'>
             {repo.name}
           </a>

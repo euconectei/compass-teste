@@ -11,8 +11,8 @@ const StarredList = ({ starreds }: StarredListType) => {
 
   return (
     <ul className='nav flex-column'>
-      {starreds.map((starred, i) => (
-        <li key={`starred-${i}`} className='nav-item'>
+      {starreds.map((starred) => (
+        <li key={starred.id} className='nav-item'>
           <a href={starred.html_url} className='nav-link'>
             {starred.name}
           </a>
