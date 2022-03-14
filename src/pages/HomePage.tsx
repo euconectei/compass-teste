@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { UserDisplay } from '../components/user';
-import UserNotFound from '../components/user/UserNotFound';
 import { useLoading } from '../contexts/LoadingContext';
 import GithubService from '../services/GithubService';
 import { UserType } from '../types/UserType';
@@ -28,7 +27,7 @@ const HomePage = () => {
     return (
       <>
         <hr className='divider' />
-        <UserDisplay user={result} username={searchedUser} />
+        <UserDisplay user={result} username={searchedUser} compact />
       </>
     );
   };
@@ -60,7 +59,6 @@ const HomePage = () => {
       </form>
 
       {renderResult()}
-      {/* TODO: Listar usuário buscado e somente após o usuário clicar, navegar para a tela do usuario */}
     </div>
   );
 };
