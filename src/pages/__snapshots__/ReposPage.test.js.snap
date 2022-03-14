@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ReposPage Page should render the ReposPage component 1`] = `
+Array [
+  <div
+    className="row"
+  >
+    <h2>
+      Lista de Repositórios de
+       
+      <a
+        href="#"
+        onClick={[Function]}
+      />
+    </h2>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="col-12"
+    >
+      <div
+        className="alert alert-info"
+      >
+        Nenhum repositório encontrado.
+      </div>
+    </div>
+  </div>,
+]
+`;
