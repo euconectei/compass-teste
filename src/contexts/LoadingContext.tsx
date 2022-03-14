@@ -18,9 +18,9 @@ const LoadingProvider = ({ children }: { children: ReactNode }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('');
 
-  const setLoading = (loading: boolean, message?: string) => {
+  const setLoading = (loading: boolean, loadingMessage?: string) => {
     setIsLoading(loading);
-    setMessage(message || '');
+    setMessage(loadingMessage || '');
   };
 
   return (
