@@ -4,16 +4,16 @@ import { useLoading } from '../contexts/LoadingContext';
 import AuthService from '../services/AuthService';
 
 const HomeSignedOut = () => {
-  const params = new URLSearchParams(window.location.search);
-  const code = params.get('code');
   const { setLoading } = useLoading();
 
   const getAccessToken = async () => {
     try {
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code');
       if (code) {
         setLoading(true, 'Solicitando token de acesso...');
         const res = await AuthService.getAccessToken(code);
-        const { access_token } = res.data;
+        const { access_token } = res;
         localStorage.setItem('access_token', access_token);
       }
     } catch (error) {
