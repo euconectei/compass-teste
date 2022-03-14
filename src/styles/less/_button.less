@@ -12,4 +12,20 @@
       color: @button-primary-color;
     }
   }
+
+  &-outline {
+    &-primary {
+      background-color: transparent;
+      border-color: @button-primary-border-color;
+      color: @button-primary-border-color;
+      padding: 0.25rem 1rem;
+      .rounded;
+
+      &:hover {
+        background-color: @button-primary-background-color;
+        border-color: darken(@button-primary-border-color, 10%);
+        color: @button-primary-color;
+      }
+    }
+  }
 }
